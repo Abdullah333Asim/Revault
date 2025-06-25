@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revault</title>
+    <!-- Link to CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+      
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#home">
+              <img src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCS1F1TmdFPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--dfd59a683242c9ba10e0b37eac5851bffbd17b48/Blue%20Simple%20Personal%20Logo-fotor-bg-remover-20250623182610.png" alt="GirlsThrift Logo" class="logo-img">
+            </a>
+          </div>
+          <!-- Desktop Nav (visible on screens >=768px) -->
+            <nav class="desktop-nav">
+            <ul class="desktop-nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+
+          <!-- Hamburger toggle (only visible on mobile) -->
+          <button class="nav-toggle" aria-label="Open navigation menu">&#9776;</button>
+      
+          <!-- Slide-in mobile nav drawer -->
+          <nav class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation">
+            <button class="drawer-close" aria-label="Close menu">&times;</button>
+            <ul class="drawer-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#trending">Trending</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Slight dark overlay -->
+          <div class="overlay" aria-hidden="true"></div>
+      
+        </div>
+      </header>
+      
+
+    <main>
+        
+    <!-- Hero Slider -->
+    <section id="home" class="hero-slider">
+        <div class="slide active" style="background-image: url('https://www.thoughtco.com/thmb/dUZhKsB5qY5L962u-ED9553poE0=/3620x2750/filters:fill(auto,1)/close-up-of-clothes-hanging-in-row-739240657-5a78b11f8e1b6e003715c0ec.jpg');">
+            <div class="slide-overlay"></div> <!-- NEW OVERLAY DIV -->
+            <div class="slide-content">
+                <h2>Welcome to Revault</h2>
+                <p>Discover unique pre-loved fashion at unbeatable prices.</p>
+                <!-- <a href="https://www.instagram.com/shoprevault/" target="_blank" class="btn-primary">Shop</a> -->
+                <button class="cta">
+                <span class="hover-underline-animation"> Shop now </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                    <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                    ></path>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://th.bing.com/th/id/OIP.JdYYAlXrJA8x5-Po82Sf2AHaHQ?w=204&h=200&c=7&r=0&o=7&pid=1.7&rm=3');">
+            <div class="slide-overlay"></div> <!-- NEW OVERLAY DIV -->
+            <div class="slide-content">
+                <h2>New Arrivals Every Week</h2>
+                <p>Stay on trend with our curated collection.</p>
+                <!-- <a href="#trending" class="btn-primary">Shop</a> -->
+                <button class="cta">
+                <span class="hover-underline-animation"> Shop now </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                    <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                    ></path>
+                </svg>
+                </button>
+
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://th.bing.com/th/id/OIP.C_qglITqLknw162ILt7kpwHaJQ?w=171&h=195&c=7&r=0&o=7&pid=1.7&rm=3');">
+            <div class="slide-overlay"></div> <!-- NEW OVERLAY DIV -->
+            <div class="slide-content">
+                <h2>Sustainable Fashion</h2>
+                <p>Reduce waste and look fabulous at the same time.</p>
+                <!-- <a href="#about" class="btn-primary">Shop</a> -->
+                 <!-- From Uiverse.io by alexmaracinaru --> 
+                <button class="cta">
+                <span class="hover-underline-animation"> Shop now </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                    <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                    ></path>
+                </svg>
+                </button>
+
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button class="slider-control prev" aria-label="Previous slide">&lt;</button>
+        <button class="slider-control next" aria-label="Next slide">&gt;</button>
+        <div class="slider-dots">
+            <span class="dot active" aria-label="Slide 1"></span>
+            <span class="dot" aria-label="Slide 2"></span>
+            <span class="dot" aria-label="Slide 3"></span>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <!-- <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Jackets" alt="Jackets">
+                <span>Jackets</span>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Dresses" alt="Dresses">
+                <span>Dresses</span>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Trousers" alt="Trousers">
+                <span>Trousers</span>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Tops" alt="Tops">
+                <span>Tops</span>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Shoes" alt="Shoes">
+                <span>Shoes</span>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/100?text=Accessories" alt="Accessories">
+                <span>Accessories</span>
+            </div>
+        </div>
+        <a href="#brands" class="btn-secondary">Browse All Brands</a>
+    </section> -->
+
+    <!-- Trending Products Section -->
+    <section id="trending" class="trending">
+        <h2>Trending Now</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.JdYYAlXrJA8x5-Po82Sf2AHaHQ?w=204&h=200&c=7&r=0&o=7&pid=1.7&rm=3" alt="Product 1">
+                <button class="fav-toggle" aria-label="Add to favorites">♡</button>
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.C_qglITqLknw162ILt7kpwHaJQ?w=171&h=195&c=7&r=0&o=7&pid=1.7&rm=3" alt="Product 2">
+                <button class="fav-toggle" aria-label="Add to favorites">♡</button>
+                <h3>Product 2</h3>
+                <p>$34.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=Product+3" alt="Product 3">
+                <button class="fav-toggle" aria-label="Add to favorites">♡</button>
+                <h3>Product 3</h3>
+                <p>$24.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=Product+4" alt="Product 4">
+                <button class="fav-toggle" aria-label="Add to favorites">♡</button>
+                <h3>Product 4</h3>
+                <p>$39.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Features Section -->
+    <section id="about" class="features">
+        <h2>Why Shop With Us?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/80?text=Icon+1" alt="Quality Icon">
+                <h3>Quality Checked</h3>
+                <p>All items are carefully curated to ensure top quality.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/80?text=Icon+2" alt="Eco Icon">
+                <h3>Eco Friendly</h3>
+                <p>Contributing to sustainability by giving clothes a second life.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/80?text=Icon+3" alt="Community Icon">
+                <h3>Community Support</h3>
+                <p>Supporting local communities through donations and partnerships.</p>
+            </div>
+        </div>
+        <a href="#" class="btn-primary">Learn More</a>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <div class="infinite-scroll-container">
+        <h2>What Our Customers Say</h2>
+        <div class="infinite-scroll-track">
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"Great selection and affordable prices! I always find something unique here."</p>
+                <h4>Jane Doe</h4>
+                <span>Happy Customer</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"I love the quality of these pre-loved clothes. Can't believe how new they look!"</p>
+                <h4>Emily Smith</h4>
+                <span>Fashion Blogger</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"Shopping here makes me feel good knowing I'm helping the environment."</p>
+                <h4>Sarah Lee</h4>
+                <span>Eco Enthusiast</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+            <!-- Duplicate cards for seamless loop -->
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"Great selection and affordable prices! I always find something unique here."</p>
+                <h4>Jane Doe</h4>
+                <span>Happy Customer</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"I love the quality of these pre-loved clothes. Can't believe how new they look!"</p>
+                <h4>Emily Smith</h4>
+                <span>Fashion Blogger</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+            <div class="infinite-scroll-card">
+            <div class="card-content">
+                <p>"Shopping here makes me feel good knowing I'm helping the environment."</p>
+                <h4>Sarah Lee</h4>
+                <span>Eco Enthusiast</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- As Seen In Logos Section -->
+    <!-- <section id="brands" class="seen-in">
+        <h2>As Seen In</h2>
+        <p>Featured in top fashion magazines and blogs</p>
+        <div class="logo-strip">
+            <img src="https://via.placeholder.com/150x50?text=Logo+1" alt="Brand Logo 1">
+            <img src="https://via.placeholder.com/150x50?text=Logo+2" alt="Brand Logo 2">
+            <img src="https://via.placeholder.com/150x50?text=Logo+3" alt="Brand Logo 3">
+            <img src="https://via.placeholder.com/150x50?text=Logo+4" alt="Brand Logo 4">
+            <img src="https://via.placeholder.com/150x50?text=Logo+5" alt="Brand Logo 5">
+        </div>
+    </section> -->
+
+    <!-- Contact / Newsletter Section -->
+    <!-- <section id="contact" class="contact-newsletter">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="https://via.placeholder.com/600x400?text=Stay+Connected" alt="Newsletter">
+            </div>
+            <div class="newsletter-form">
+                <h2>Stay in the Loop</h2>
+                <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="subscribe" checked> Fashion Updates</label>
+                        <label><input type="checkbox" name="subscribe"> Promotions</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding">
+                <h3>Revault</h3>
+                <p>Pre-loved fashion for a sustainable future.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">In</a>
+                    <a href="#" aria-label="Facebook">Fb</a>
+                    <a href="#" aria-label="Twitter">Tw</a>
+                </div>
+            </div>
+            <div class="footer-col shop-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                </ul>
+            </div>
+            <div class="footer-col customer-service">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GirlsThrift. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
