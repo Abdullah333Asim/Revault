@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showSlide(index) {
   const slider = document.querySelector('.hero-slider');
-  const slideWidth = slider.getBoundingClientRect().width / slides.length; // get actual width per slide
-  slider.style.transform = `translateX(-${index * slideWidth}vw)`;
+  const slide = document.querySelector('.hero-slider .slide');
 
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
+  if (!slide || !slider) return;
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
+  const slideWidth = slide.offsetWidth;
+  slider.style.transform = `translateX(-${index * slideWidth}px)`;
+
+  slides.forEach((s, i) => s.classList.toggle('active', i === index));
+  dots.forEach((d, i) => d.classList.toggle('active', i === index));
 }
+
 
 
   if (nextBtn && prevBtn && slides.length && dots.length) {
