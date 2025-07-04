@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showSlide(index) {
   const slider = document.querySelector('.hero-slider');
-  slider.style.transform = `translateX(-${index * 100}vw)`;
+  const slideWidth = slider.getBoundingClientRect().width / slides.length; // get actual width per slide
+  slider.style.transform = `translateX(-${index * slideWidth}vw)`;
 
   slides.forEach((slide, i) => {
     slide.classList.toggle('active', i === index);
