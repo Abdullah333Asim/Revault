@@ -863,3 +863,7 @@ a {
 .product-grid, .features-grid, .trending {
   overflow: visible;
 }
+
+.hero-slider {
+  touch-action: pan-y;
+}

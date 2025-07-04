@@ -117,7 +117,7 @@ function showSlide(index) {
 let startX = 0;
 let endX = 0;
 
-const heroSection = document.querySelector('.hero');
+const heroSection = document.querySelector('.hero-slider');
 
 heroSection.addEventListener('touchstart', (e) => {
   startX = e.touches[0].clientX;
