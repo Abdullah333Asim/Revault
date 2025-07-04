@@ -845,3 +845,21 @@ a {
       justify-content: space-between;
   }
 }
+
+/* fade-in animation */
+.fade-in {
+  opacity: 0.2;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+* {
+  overflow: visible;
+}
+.product-grid, .features-grid, .trending {
+  overflow: visible;
+}

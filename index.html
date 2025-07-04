@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,7 +29,7 @@
             <nav class="desktop-nav">
             <ul class="desktop-nav-list">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#categories">Categories</a></li>
+                <!-- <li><a href="#categories">Categories</a></li> -->
                 <li><a href="#trending">Trending</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -85,7 +87,7 @@
                 </button>
             </div>
         </div>
-        <div class="slide" style="background-image: url('https://th.bing.com/th/id/OIP.JdYYAlXrJA8x5-Po82Sf2AHaHQ?w=204&h=200&c=7&r=0&o=7&pid=1.7&rm=3');">
+        <div class="slide" style="background-image: url('https://i.pinimg.com/736x/15/c8/57/15c857d2cdd7eb6bda0dc916d1f29402.jpg');">
             <div class="slide-overlay"></div> <!-- NEW OVERLAY DIV -->
             <div class="slide-content">
                 <h2>New Arrivals Every Week</h2>
@@ -111,7 +113,7 @@
 
             </div>
         </div>
-        <div class="slide" style="background-image: url('https://th.bing.com/th/id/OIP.C_qglITqLknw162ILt7kpwHaJQ?w=171&h=195&c=7&r=0&o=7&pid=1.7&rm=3');">
+        <div class="slide" style="background-image: url('https://t4.ftcdn.net/jpg/05/96/62/65/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg');">
             <div class="slide-overlay"></div> <!-- NEW OVERLAY DIV -->
             <div class="slide-content">
                 <h2>Sustainable Fashion</h2>
@@ -183,7 +185,7 @@
     <!-- Trending Products Section -->
     <section id="trending" class="trending">
         <h2>Trending Now</h2>
-        <div class="product-grid">
+        <div class="product-grid" data-aos="fade-up" data-aos-delay="200">
             <div class="product-card">
                 <img src="https://th.bing.com/th/id/OIP.JdYYAlXrJA8x5-Po82Sf2AHaHQ?w=204&h=200&c=7&r=0&o=7&pid=1.7&rm=3" alt="Product 1">
                 <button class="fav-toggle" aria-label="Add to favorites">♡</button>
@@ -215,17 +217,17 @@
     <section id="about" class="features">
         <h2>Why Shop With Us?</h2>
         <div class="features-grid">
-            <div class="feature-card">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
                 <img src="https://via.placeholder.com/80?text=Icon+1" alt="Quality Icon">
                 <h3>Quality Checked</h3>
                 <p>All items are carefully curated to ensure top quality.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                 <img src="https://via.placeholder.com/80?text=Icon+2" alt="Eco Icon">
                 <h3>Eco Friendly</h3>
                 <p>Contributing to sustainability by giving clothes a second life.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
                 <img src="https://via.placeholder.com/80?text=Icon+3" alt="Community Icon">
                 <h3>Community Support</h3>
                 <p>Supporting local communities through donations and partnerships.</p>
@@ -369,5 +371,13 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation duration
+    once: true     // only animate once
+  });
+</script>
+
 </body>
 </html>
