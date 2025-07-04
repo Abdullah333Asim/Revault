@@ -6,11 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
 
   function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove('active'));
-    dots.forEach((dot) => dot.classList.remove('active'));
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-  }
+  const slider = document.querySelector('.hero-slider');
+  slider.style.transform = `translateX(-${index * 100}vw)`;
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
 
   if (nextBtn && prevBtn && slides.length && dots.length) {
     nextBtn.addEventListener('click', () => {
